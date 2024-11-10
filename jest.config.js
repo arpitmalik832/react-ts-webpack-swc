@@ -82,7 +82,7 @@ const config = {
     url: 'http://localhost:3000/',
   },
   transform: {
-    '\\.(ts|tsx)$': '@swc/jest',
+    '\\.(ts|tsx)$': 'ts-jest',
   },
   // unmockedModulePathPatterns: // [array<string>]
   verbose: true, // [boolean],

@@ -1,6 +1,6 @@
 {
   "name": "react_ts_webpack_swc",
-  "version": "0.0.1-alpha.0",
+  "version": "0.0.0",
   "description": "TODO > add description",
   "type": "module",
   "author": "Arpit Malik",
@@ -141,7 +141,6 @@
     "@storybook/react-webpack5": "8.3.6",
     "@svgr/webpack": "^8.1.0",
     "@swc/core": "^1.9.1",
-    "@swc/jest": "^0.2.37",
     "@testing-library/jest-dom": "^6.6.1",
     "@testing-library/react": "^16.0.1",
     "@types/jest": "^29.5.13",
