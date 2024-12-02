@@ -137,7 +137,7 @@
     "@storybook/addon-interactions": "^8.3.6",
     "@storybook/addon-links": "^8.3.6",
     "@storybook/addon-storysource": "^8.3.6",
-    "@storybook/blocks": "^8.3.6",
+    "@storybook/blocks": "^8.4.6",
     "@storybook/react-webpack5": "8.3.6",
     "@svgr/webpack": "^8.1.0",
     "@swc/core": "^1.9.1",
