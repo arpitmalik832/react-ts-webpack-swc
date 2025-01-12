@@ -11,7 +11,6 @@ import CssMinimizerPlugin from 'css-minimizer-webpack-plugin';
 import CopyPlugin from 'copy-webpack-plugin';
 import Dotenv from 'dotenv-webpack';
 import { fileURLToPath } from 'url';
-import path from 'path';
 
 import pkg from '../../../package.json' with { type: 'json' };
 import { entryPath, outputPath } from '../../config/commonPaths.mjs';
@@ -194,9 +193,6 @@ const config = {
     sideEffects: true,
   },
   plugins: [
-    new webpack.ProvidePlugin({
-      process: 'process/browser',
-    }),
     new webpack.DefinePlugin({
       'process.env.APP_ENV': JSON.stringify(process.env.APP_ENV),
     }),
@@ -222,15 +218,7 @@ const config = {
     }),
   ],
   resolve: {
-    alias: {
-      process: 'process/browser',
-    },
-    fallback: {
-      'process/browser': path.resolve('node_modules/process/browser.js'),
-    },
-    extensions: ['*', '.ts', '.tsx'],
-    symlinks: false,
-    cacheWithContext: false,
+    extensions: ['.ts', '.tsx', '.js'],
   },
 };
 
